@@ -17,3 +17,20 @@
  * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
  *
  */
+    
+function anagram(word1, word2) {
+    let splitWord1 = word1.split('');
+    let splitWord2 = word2.split('');
+    let sortWord1 = splitWord1.sort();
+    let sortWord2 = splitWord2.sort();
+    let count = 0;
+    console.log(sortWord1, sortWord2)
+
+    if (JSON.stringify(sortWord1)==JSON.stringify(sortWord2)) {
+        console.log(true);
+    }
+    else{
+        console.log(false);
+    }
+}
+anagram("amor", "roma");
